@@ -101,3 +101,15 @@ bool operator==(const matrix_ & m1, const matrix_ & m2)
 }
 
 
+ostream& operator<<(ostream& os, const matrix_ & m) {
+
+	for (size_t i1 = 0; i1 < m.getI; i1++)
+	{
+		for (size_t j1 = 0; j1 < m.getJ; j1++)
+		{
+			os << m[i1][j1] << " ";
+		}
+		cout << endl;
+	}
+	return os;
+}
