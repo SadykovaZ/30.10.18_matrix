@@ -1,4 +1,5 @@
 #include "matrix_.h"
+
 matrix_::matrix_()
 {
 	this->i = 0;
@@ -99,7 +100,4 @@ bool operator==(const matrix_ & m1, const matrix_ & m2)
 	return false;
 }
 
-ostream & operator<<(ostream & os, const matrix_ & m)
-{
-	return os;
-}
+

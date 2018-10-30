@@ -25,4 +25,16 @@ public:
 	~matrix_();
 };
 bool operator==(const matrix_ & m1, const matrix_ & m2);
-ostream& operator<<(ostream& os, const matrix_ & m);
+
+ostream& operator<<(ostream& os, const matrix_ & m) {
+
+	for (size_t i1 = 0; i1 < m.i; i1++)
+	{
+		for (size_t j1 = 0; j1 < m.j; j1++)
+		{
+			os << m.matr << " ";
+		}
+		cout << endl;
+	}
+	return os;
+}
